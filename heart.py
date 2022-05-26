@@ -24,7 +24,7 @@ except sqlite3.Error as error:
 def get_address_from_coords(coords):
     
     PARAMS = {
-        "apikey": "4732e64d-b637-4aed-8844-6802dcc23576",
+        "apikey": "token",
         "format": "json",
         "lang": "ru_RU",
         "kind": "house",
@@ -119,7 +119,7 @@ def download (update, context):
 #Это основная функция, где запускается наш бот  
 def main():
     print('начало')
-    updater = Updater("5229810763:AAEFQvljlEgfFZ8-Gy_0yXOTJ3atzCNjPpk", use_context=True)
+    updater = Updater("token", use_context=True)
     dispatcher = updater.dispatcher
     dispatcher.add_handler(CommandHandler("start",  start_command))
     dispatcher.add_handler(CommandHandler("save", download  ))
