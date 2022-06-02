@@ -1,5 +1,5 @@
 # adminKurzonaBOT_tg
 
-pip install sqlite
+pip install pysqlite
 
 pip install python-telegram-bot --upgrade
